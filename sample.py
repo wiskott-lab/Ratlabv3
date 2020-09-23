@@ -570,7 +570,7 @@ def display_sampler_directional():
 			x = 0
 			for i in range( int(dir_a-ctrl.setup.rat.fov[0]/2), int(dir_a+ctrl.setup.rat.fov[0]/2) ):
 
-				glViewport( x,0,1,ctrl.setup.rat.fov[1] )
+				glViewport( x,0,1,int(ctrl.setup.rat.fov[1]) )
 
 				glMatrixMode( GL_PROJECTION )
 				glLoadIdentity()
@@ -614,7 +614,7 @@ def display_sampler_directional():
 						i+=1
 
 			# get network value
-			network_result = ctrl.cfg.sfa_network.execute( data )
+			network_result = ctrl.cfg.sfa_network.execute( data )[:,:ctrl.cfg.sample_order]
 			sample_data[p, dir_a] = network_result[0]
 
 			# update progress bar
