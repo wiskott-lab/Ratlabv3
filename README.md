@@ -15,7 +15,7 @@ RatLab is written in Python and uses the following libraries:
 * [Pillow](https://pillow.readthedocs.io/en/stable/)  (Updated from PIL in the previous version of Ratlab)
 * [PyOpenGL](http://pyopengl.sourceforge.net/)
 
-The `requirements.txt` file shows the versions of each library that can be used for Python 3.8.5. Once you have python, the other libraries can all be installed using pip. However, if you are using a Windows machine you will need to download PyOpenGL from [[PyPi](https://pypi.org/project/PyOpenGL/#files)] and install it manually using:
+The `requirements.txt` file shows the versions of each library that can be used for Python 3.8. Once you have python, the other libraries can all be installed using pip. However, if you are using a Windows machine you will need to download PyOpenGL from [[PyPi](https://pypi.org/project/PyOpenGL/#files)] and install it manually using:
 
 	$ tar -zxvf PyOpenGL-3.1.5.tar.gz
 	$ cd PyOpenGL-3.1.5
