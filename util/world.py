@@ -95,7 +95,6 @@ class Wall( Freezeable ):
 		xy = self.vec_to-self.vec_from
 		uv = pos_new-pos_old
 		l = ( pos_old[1] + (self.vec_from[0]*uv[1]-pos_old[0]*uv[1])/uv[0] - self.vec_from[1] ) / ( (1.0-(xy[0]*uv[1])/(uv[0]*xy[1])) * xy[1] )
-		print(l)
 		m = ( self.vec_from[0] + l*xy[0] - pos_old[0] ) / uv[0]
 		# check C: intersection lies between old & new position, and also within wall segment limits
 		if l >= 0 and l <= 1.0 and \

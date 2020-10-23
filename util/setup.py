@@ -69,7 +69,7 @@ Freezeable = freezeable.Freezeable
 #     +->fov:      rat field of view [def: 320.0]
 #     +->arc:      arc defining rat mobility  [320.0]
 #     +->path_dev: deviation from beeline when following a path [def: 0.3]
-#     +->path_mom: momentum/smoothness of the rat's path [def: 0.8]
+#     +->path_mom: momentum/smoothness of the rat's path [def: 0.55]
 #     +->bias:	   sector denoting an optional movement bias [def: (0.0,0.0)]
 #     +->bias_s:   vcalar strength factor of the movement bias [def: 0.0]
 #     +->speed:    speed multiplyer for the movement of the rat [def: 1.0]

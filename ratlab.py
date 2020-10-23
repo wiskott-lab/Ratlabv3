@@ -26,7 +26,8 @@
 import os
 import sys
 import time
-import pickle
+#import pickle
+import _pickle as cpickle
 
 # math
 import math
@@ -321,9 +322,9 @@ def __display__():
 			last_view_grayscale.save( './current_experiment/sequence/frame_'+str(ctrl.state.step).zfill(5)+'.png' )
 
 		# collect movement data
-		ctrl.modules.datafile.write(str(ctrl.state.step) + ' ' +
-									str(rat_state[0][0]) + ' ' + str(rat_state[0][1]) + ' ' +
-									str(rat_state[1][0]) + ' ' + str(rat_state[1][1]) + '\n')
+		ctrl.modules.datafile.write( str(ctrl.state.step) + ' ' +
+							  str(rat_state[0][0]) + ' ' + str(rat_state[0][1]) + ' ' +
+							  str(rat_state[1][0]) + ' ' + str(rat_state[1][1]) + '\n')
 
 	# simulation step counter
 	ctrl.state.step += 1
@@ -617,7 +618,7 @@ def printHelp():
 	print('            [Default: 320]\n')
 	print('mom <x>     Sets the momentum term of the rat\'s movement. Has to lie between 0')
 	print('            and 1, and effectively describes the smoothness of the path.')
-	print('            [Default: 0.8]\n')
+	print('            [Default: 0.55]\n')
 	print('path <file_name>')
 	print('            The rat follows a series of waypoints given by the file <file_name>')
 	print('            residing in the \'./current_experiment\' directory. In the \'./tools\'\n')
@@ -655,5 +656,5 @@ def printHelp():
 	print('    $ python ratlab.py bias 0 1 1.5 star_maze 8 40 80 100')
 	print('================================================================================')
 
-main() # <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<[ main ]
 
+main() # <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<   <<<[ main ]

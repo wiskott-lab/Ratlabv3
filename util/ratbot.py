@@ -156,7 +156,7 @@ class RatBot( Freezeable ):
 		# current position & velocity/direction
 		pos      = self.__path__[len(self.__path__)-1]
 		pos_next = np.array([np.nan,np.nan])
-		if len(self.__path__) > 1: vel = pos-self.__path__[len(self.__path__)-2]
+		if len(self.__path__) > 1: vel = pos-self.__path__[len(self.__path__)-2]			 
 		else: vel = self.__gaussianWhiteNoise2D__()
 		# generate next step
 		while True:
