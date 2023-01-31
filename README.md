@@ -11,7 +11,7 @@ RatLab is written in Python and uses the following libraries:
 
 * [Python](https://www.python.org/)
 * [NumPy](http://www.numpy.org/)
-* [Modular Toolkit for Data Processing](http://mdp-toolkit.sourceforge.net/) (MDP)
+* [Modular Toolkit for Data Processing](https://github.com/mdp-toolkit/mdp-toolkit/) (in case you get numpy TypeDict errors please refer to this [this issue](https://github.com/mdp-toolkit/mdp-toolkit/issues/92#issuecomment-1165338046))
 * [Pillow](https://pillow.readthedocs.io/en/stable/)  (Updated from PIL in the previous version of Ratlab)
 * [PyOpenGL](http://pyopengl.sourceforge.net/)
 
